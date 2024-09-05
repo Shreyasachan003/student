@@ -6,7 +6,8 @@
 }
 
 /*first page css*/
-.header {
+
+.front{
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://img.freepik.com/free-photo/tall-modern-building-reflects-abstract-cityscape-pattern-generated-by-ai_188544-27403.jpg);
@@ -15,70 +16,69 @@
     position: relative;
 }
 
-nav {
+nav{
     display: flex;
-    padding: 1% 4%;
+    padding:1% 4%;
     justify-content: space-between;
     align-items: center;
 }
 
-nav img {
+nav img{
     width: 100px;
 }
 
-.nav-links {
+.nav-links{
     flex: 1;
     text-align: right;
 }
 
-.nav-links ul li {
+.nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 13px;
-    position: relative;
+    position:relative;
 }
 
-.nav-links ul li a {
-    color: rgb(253, 250, 250);
+.nav-links ul li a{
+    color: white;
     text-decoration: none;
     font-size: 20px;
 }
 
-.nav-links ul li::after {
+.nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
     background: #eae9ec;
     display: block;
-    margin: auto;
+    margin:auto;
     transition: 0.5s;
 }
 
-.nav-links ul li:hover::after {
+.nav-links ul li:hover::after{
     width: 100%;
 }
 
-.text {
+.write{
     width: 100%;
-    color: white;
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    text-align: left;
+    color:white;
+    position:absolute;
+    top:20%;
+    left:5%;
+    text-align : left;
 }
 
-.text h1 {
+.write h1{
     font-size: 120px;
-    color: #fff;
 }
 
-.text p {
+.write p{
     margin: 10px 0 40px;
     font-size: 24px;
-    color: rgb(207, 38, 38);
+    color: white;
 }
 
-.school_login {
+.school_login{
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -90,24 +90,29 @@ nav img {
     border-radius: 20px;
 }
 
-.school_login:hover {
-    border: 1px solid rgb(245, 244, 247);
-    background: #f3f2f6;
+.school_login:hover{
+    border: 1px  solid rgb(77, 34, 156);
+    background:#382779;
     transition: 1s;
-}
+} 
 
 /*second page*/
 
-#header>p {
+#second {
+    background-color: #c783b6;
+    padding: 50px;
+    color: rgba(17, 5, 5, 0.795);
+}
+
+#second p {
     color: white;
 }
 
-.text1 {
+#second .text1 {
     font-size: 26px;
     color: rgb(208, 204, 204);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 
 .stats {
     display: flex;
@@ -120,6 +125,8 @@ nav img {
 .stats div {
     text-align: center;
 }
+
+/* Wall of Distinction Section Styles */
 .wall-of-distinction {
     text-align: center;
     padding: 40px;
@@ -127,6 +134,15 @@ nav img {
     color: #f0f0f0;
 }
 
+.wall-of-distinction h1 {
+    margin: 0;
+}
+
+.wall-of-distinction p {
+    margin: 0;
+}
+
+/* Awards Section Styles */
 .awards {
     display: flex;
     justify-content: center;
@@ -140,15 +156,23 @@ nav img {
     margin: 10px;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 150px;
     text-align: center;
     color: rgb(14, 11, 11);
 }
 
+.award img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
-
-
+.award p {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
 /*third page css*/
 .centered-content{
     text-align: center;
@@ -157,7 +181,6 @@ nav img {
 h1 {
     margin-bottom: 20px;
     margin-top: 50px;
-    color: #333;
     font-size: 4rem;
     font-weight: 600;
     line-height: 1.2;
@@ -178,7 +201,7 @@ h1 {
     height: 515px;
 }
 /*fourth page*/
-.container {
+.things {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -231,9 +254,10 @@ h1 {
 }
 
 /* fifth page*/
-.container{
-    display:flex;
-    width:90%;
+.containered {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -262,6 +286,7 @@ h1 {
 .item {
     width: 30%;
     text-align: center;
+    position: relative;
 }
 
 .item .number {
@@ -273,6 +298,7 @@ h1 {
     z-index: -1;
     margin-top: 1.5em;
 }
+
 .item img {
     width: 100%;
     height: auto;
@@ -288,8 +314,9 @@ h1 {
 
 .item p {
     font-size: 1em;
-    color: #7f8c8d;
+    color: #fff; /* Adjusted to match the background if needed */
 }
+
 
 /*sixth page*/
 
